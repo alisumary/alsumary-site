@@ -1,0 +1,127 @@
+{
+  "name": "Ali Alsumary",
+  "role": "Photographer & Videographer",
+  "tagline": "Cars, brands and people — shot with an engineer's eye.",
+  "location": "Baghdad, Iraq",
+  "since": "2019",
+  "heroImage": "",
+  "heroDriveLink": "https://drive.google.com/file/d/1vD8j5TKi60vrI738FpLvVGAVt0rj_qxC/view",
+  "heroCaption": "Range Rover Sport SV — landscape series",
+  "photos": [
+    {
+      "title": "Defender 110",
+      "project": "Jaguar Land Rover Iraq",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/12x1EkJPUoXhRG2IZ4vT949jGArqpsQTV/view"
+    },
+    {
+      "title": "Range Rover Sport SV",
+      "project": "Jaguar Land Rover Iraq",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1vgdf1BRkZJxr7OGaC1iVcHr3DVIMafcR/view"
+    },
+    {
+      "title": "Lexus RX — interior",
+      "project": "Lexus Iraq",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1_DlQMmQMLVZpP7ffbJ-LgJHFIMHqwdT2/view"
+    },
+    {
+      "title": "Defender '26",
+      "project": "Jaguar Land Rover Iraq",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1RXbfWLLR7H18LVhxvD0I_XVfO37-SlZo/view"
+    },
+    {
+      "title": "F-PACE",
+      "project": "Jaguar",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1Jabo_9bot9IkfWmza6P8c_uXjPa4qBF6/view"
+    },
+    {
+      "title": "Defender — Al-Bdoor",
+      "project": "Jaguar Land Rover Iraq",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1TNGoXrNnAkTxkdsqb_WlfUWdBx6xy3xi/view"
+    },
+    {
+      "title": "Labor Day",
+      "project": "STA — Jaguar Land Rover",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/1Y5WLu-ogiI1ZXxQN4kDu_Gp2BRRpZepX/view"
+    },
+    {
+      "title": "Astro",
+      "project": "Night sky series",
+      "image": "",
+      "driveLink": "https://drive.google.com/file/d/17lveAFJt2v0hZdwdGm5kNTIgfs5No-f7/view"
+    }
+  ],
+  "photoArchive": "https://drive.google.com/drive/folders/1DD17ttvukeS8cBWzFHYWd7wK37IY7-up?usp=sharing",
+  "youtubeChannel": "https://www.youtube.com/@Alialsumary",
+  "youtubePlaylist": "UUTBVQLcyj7yi5ewlZxMimVA",
+  "featuredVideos": [],
+  "clients": [
+    "Toyota Iraq",
+    "Lexus Iraq",
+    "Jaguar Land Rover Iraq",
+    "Hino",
+    "Komatsu",
+    "US Embassy Baghdad",
+    "USAID",
+    "GIZ Iraq",
+    "Amideast Iraq"
+  ],
+  "about": "I studied electromechanical engineering, then picked up a camera and never put it down. Since 2019 I've shot launches, ads, documentaries and product work for automotive brands, NGOs and embassies across Iraq. I care about clean light, honest moments, and delivering on time.",
+  "facts": [
+    {
+      "label": "Based in",
+      "value": "Baghdad, Iraq"
+    },
+    {
+      "label": "Working since",
+      "value": "2019"
+    },
+    {
+      "label": "Now",
+      "value": "Photographer & retoucher, Sardar Group"
+    },
+    {
+      "label": "Education",
+      "value": "B.Sc. Electromechanical Engineering"
+    },
+    {
+      "label": "Certified",
+      "value": "Meta Digital Marketing"
+    }
+  ],
+  "services": [
+    {
+      "title": "Automotive photography",
+      "text": "Studio, location and night shoots for dealers and brands."
+    },
+    {
+      "title": "Commercial video",
+      "text": "Ads, promos and social cuts — from idea to final grade."
+    },
+    {
+      "title": "Launches & events",
+      "text": "Fast, reliable coverage of reveals, openings and conferences."
+    },
+    {
+      "title": "Documentary & interviews",
+      "text": "Real people, real stories, shot with care."
+    },
+    {
+      "title": "Retouching & colour",
+      "text": "Clean, natural edits that keep the car looking like the car."
+    }
+  ],
+  "contact": {
+    "headline": "Let's make something worth stopping for.",
+    "whatsapp": "+964 783 898 9829",
+    "email": "",
+    "instagram": "https://www.instagram.com/7dq",
+    "linkedin": "https://www.linkedin.com/in/alsumarymedia/"
+  }
+}

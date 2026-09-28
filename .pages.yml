@@ -1,0 +1,81 @@
+# Dashboard settings for Pages CMS (https://app.pagescms.org)
+media:
+  input: img/uploads
+  output: /img/uploads
+
+content:
+  - name: site
+    label: My Website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: name, label: Your name, type: string, required: true }
+      - { name: role, label: Job title, type: string }
+      - { name: tagline, label: Tagline (big line under your name), type: string }
+      - { name: location, label: City, type: string }
+      - { name: since, label: Working since (year), type: string }
+
+      - name: heroImage
+        label: Top photo (upload)
+        description: Upload a wide photo. If empty, the Google Drive link below is used.
+        type: image
+      - name: heroDriveLink
+        label: Top photo (Google Drive link)
+        description: Right-click the photo in Drive > Share > Copy link. File must be "Anyone with the link".
+        type: string
+      - { name: heroCaption, label: Top photo caption, type: string }
+
+      - name: photos
+        label: Selected photos (6–8 is best)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: project, label: Client / project, type: string }
+          - { name: image, label: Photo (upload), type: image }
+          - { name: driveLink, label: Or Google Drive link, type: string }
+
+      - { name: photoArchive, label: Google Drive photo archive link, type: string }
+      - { name: youtubeChannel, label: YouTube channel link, type: string }
+      - name: youtubePlaylist
+        label: YouTube playlist ID
+        description: Videos in this playlist show on the site. The default shows all your uploads. To show only your best, make a playlist and paste its ID (the part after list=).
+        type: string
+      - name: featuredVideos
+        label: Featured videos (optional)
+        description: Paste YouTube video links. If you add any, these show instead of the playlist.
+        type: string
+        list: true
+
+      - name: clients
+        label: Clients
+        type: string
+        list: true
+
+      - { name: about, label: About me, type: text }
+      - name: facts
+        label: Quick facts
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label, type: string }
+          - { name: value, label: Value, type: string }
+
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Service, type: string }
+          - { name: text, label: Short description, type: string }
+
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: headline, label: Contact headline, type: string }
+          - { name: whatsapp, label: WhatsApp number (with +964), type: string }
+          - { name: email, label: Email (leave empty to hide), type: string }
+          - { name: instagram, label: Instagram link, type: string }
+          - { name: linkedin, label: LinkedIn link, type: string }

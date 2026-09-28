@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ali Alsumary — Photographer & Videographer, Baghdad</title>
+<meta name="description" content="Ali Alsumary is a Baghdad-based photographer and videographer shooting automotive, commercial and documentary work for brands across Iraq.">
+<meta property="og:title" content="Ali Alsumary — Photographer & Videographer">
+<meta property="og:description" content="Automotive, commercial and documentary visuals from Baghdad.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alsumary.art">
+<meta name="theme-color" content="#0d0d0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<!--STYLE-->
+<style>
+:root{
+  --ground:#0d0d0e;      /* asphalt at night */
+  --surface:#161618;
+  --line:#2a2927;
+  --ink:#ecebe6;
+  --muted:#94918a;
+  --sodium:#e2a553;      /* sodium street-light amber */
+  --sodium-ink:#1a1206;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,48px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sodium);outline-offset:3px}
+.wrap{padding-inline:var(--gutter);max-width:1440px;margin-inline:auto}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(13,13,14,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;min-height:60px}
+.brand{font:800 15px/1 var(--display);font-stretch:125%;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;margin-right:auto}
+.nav nav{display:flex;gap:22px}
+.nav nav a{font:500 14px var(--body);color:var(--muted);text-decoration:none}
+.nav nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 14px/1 var(--body);text-decoration:none;padding:13px 18px;border-radius:2px;border:1px solid var(--line);transition:background .2s,border-color .2s,color .2s}
+.btn:hover{border-color:var(--ink)}
+.btn.solid{background:var(--sodium);color:var(--sodium-ink);border-color:var(--sodium)}
+.btn.solid:hover{background:#f0b867;border-color:#f0b867}
+.btn .arr{font-family:var(--mono)}
+@media (max-width:720px){.nav nav{display:none}.nav .btn{padding:10px 14px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(84vh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--surface)}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,14,.15) 0%,rgba(13,13,14,.2) 45%,rgba(13,13,14,.94) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-block:clamp(40px,8vh,88px)}
+.hero h1{margin:0;font:900 clamp(52px,12.5vw,196px)/.84 var(--display);font-stretch:125%;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance}
+.hero h1 span{display:block}
+.hero h1 span:last-child{color:var(--sodium)}
+.hero .under{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 40px;margin-top:28px}
+.hero .tag{margin:0;font:500 clamp(18px,2vw,24px)/1.35 var(--body);max-width:32ch;text-wrap:balance}
+.hero .meta{display:flex;flex-direction:column;gap:6px;text-align:right}
+.hero .cap{position:absolute;top:22px;right:var(--gutter);z-index:2}
+@media (max-width:720px){.hero .meta{text-align:left}}
+
+/* ---------- sections ---------- */
+section{padding-block:clamp(72px,11vw,150px)}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(32px,5vw,56px)}
+.head h2{margin:0;font:800 clamp(36px,6vw,84px)/.92 var(--display);font-stretch:118%;text-transform:uppercase;letter-spacing:-.01em}
+.head p{margin:0;max-width:44ch;color:var(--muted)}
+.eyebrow{display:block;margin-bottom:14px}
+
+/* ---------- frames (contact sheet) ---------- */
+.frames{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.4vw,18px)}
+.frame{grid-column:span 6;margin:0}
+.frame:nth-child(1){grid-column:span 12}
+.frame:nth-child(n+4):nth-child(-n+6){grid-column:span 4}
+.frame .box{position:relative;aspect-ratio:3/2;max-width:100%;overflow:hidden;background:linear-gradient(135deg,#1c1b1a,#101011)}
+.frame:nth-child(1) .box{aspect-ratio:21/9}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.frame:hover img{transform:scale(1.035)}
+.frame .box.noimg img{display:none}
+.frame .box.noimg::after{content:attr(data-title);position:absolute;inset:0;display:grid;place-items:center;font:800 clamp(18px,3vw,40px)/1 var(--display);font-stretch:125%;text-transform:uppercase;color:#2f2e2c;padding:20px;text-align:center}
+.frame figcaption{display:flex;gap:14px;align-items:baseline;padding-top:12px;border-top:0}
+.frame figcaption b{font:600 15px var(--body)}
+.frame figcaption .fr{color:var(--sodium)}
+.frame figcaption .pj{margin-left:auto;text-align:right}
+@media (max-width:760px){
+  .frame,.frame:nth-child(n+4):nth-child(-n+6){grid-column:span 12}
+  .frame:nth-child(1) .box{aspect-ratio:3/2}
+  .frame figcaption{flex-wrap:wrap;gap:4px 12px}
+}
+.more{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,4vw,44px)}
+
+/* ---------- film ---------- */
+.film{background:var(--surface);border-block:1px solid var(--line)}
+.player{position:relative;aspect-ratio:16/9;max-width:100%;background:#000}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+
+/* ---------- clients ---------- */
+.clients ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 0;font:700 clamp(24px,3.8vw,52px)/1.18 var(--display);font-stretch:112%;text-transform:uppercase;letter-spacing:-.005em}
+.clients li{color:var(--ink)}
+.clients li:not(:last-child)::after{content:"/";color:var(--sodium);margin-inline:.35em;font-weight:400}
+
+/* ---------- about ---------- */
+.about .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.about .lead{margin:0;font:500 clamp(21px,2.4vw,30px)/1.4 var(--body);max-width:30ch;text-wrap:pretty}
+.facts{margin:0;display:grid;border-top:1px solid var(--line)}
+.facts div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding-block:14px;border-bottom:1px solid var(--line)}
+.facts dt{margin:0;padding-top:3px}
+.facts dd{margin:0;font-weight:500}
+.services{margin-top:clamp(56px,8vw,100px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0;border-top:1px solid var(--line)}
+.svc{padding:24px 24px 28px 0;border-bottom:1px solid var(--line)}
+.svc h3{margin:0 0 8px;font:700 19px/1.2 var(--display);font-stretch:110%}
+.svc p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:820px){.about .grid{grid-template-columns:1fr}.facts div{grid-template-columns:110px 1fr}}
+
+/* ---------- contact ---------- */
+.contact h2{margin:0 0 clamp(28px,4vw,44px);font:900 clamp(40px,8.5vw,128px)/.9 var(--display);font-stretch:125%;text-transform:uppercase;letter-spacing:-.015em;max-width:14ch;text-wrap:balance}
+.contact .links{display:flex;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--line);padding-block:26px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.frame img{transition:none}.frame:hover img{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" data-f="name">Ali Alsumary</a>
+    <nav aria-label="Sections">
+      <a href="#work">Photos</a><a href="#film">Film</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn solid" id="navWa" href="#contact">WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Intro" style="padding:0">
+    <div class="ph"><img id="heroImg" alt="" fetchpriority="high"></div>
+    <span class="cap mono" id="heroCap"></span>
+    <div class="wrap">
+      <h1 id="heroName"><span>Ali</span><span>Alsumary</span></h1>
+      <div class="under">
+        <p class="tag" data-f="tagline"></p>
+        <div class="meta mono">
+          <span data-f="role"></span>
+          <span id="heroLoc"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow mono">Photography</span><h2>Selected frames</h2></div>
+        <p>A few favourites. The full collection lives in my photo archive.</p>
+      </div>
+      <div class="frames" id="frames"></div>
+      <div class="more"><a class="btn" id="archiveBtn" target="_blank" rel="noopener">Full photo archive <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <section id="film" class="film">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow mono">Video</span><h2>Moving pictures</h2></div>
+        <p>Ads, launches and documentary work. Always up to date from my YouTube channel.</p>
+      </div>
+      <div id="videos"></div>
+      <div class="more"><a class="btn" id="ytBtn" target="_blank" rel="noopener">Watch on YouTube <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="clients" aria-labelledby="clientsH">
+    <div class="wrap">
+      <span class="eyebrow mono" id="clientsH">Trusted by</span>
+      <ul id="clients"></ul>
+    </div>
+  </section>
+
+  <section id="about" class="about" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><div><span class="eyebrow mono">About</span><h2>An engineer behind the camera</h2></div></div>
+      <div class="grid">
+        <p class="lead" data-f="about"></p>
+        <dl class="facts" id="facts"></dl>
+      </div>
+      <div class="services" id="services"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact film">
+    <div class="wrap">
+      <span class="eyebrow mono">Contact</span>
+      <h2 id="contactH"></h2>
+      <div class="links" id="links"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span id="copy"></span>
+    <span id="footLoc"></span>
+  </div>
+</footer>
+
+<!--DATA-->
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); };
+
+  // Turn an upload path or a Google Drive share link into an image URL
+  function imgUrl(upload, drive, w){
+    if (upload) return upload;
+    if (!drive) return "";
+    var m = String(drive).match(/\/d\/([\w-]{10,})/) || String(drive).match(/[?&]id=([\w-]{10,})/);
+    return m ? "https://lh3.googleusercontent.com/d/" + m[1] + "=w" + (w || 2000) : drive;
+  }
+  function ytId(url){
+    var m = String(url).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
+    return m ? m[1] : "";
+  }
+  function waLink(num){ return "https://wa.me/" + String(num).replace(/[^\d]/g, ""); }
+
+  function render(d){
+    document.querySelectorAll("[data-f]").forEach(function(el){ el.textContent = d[el.dataset.f] || ""; });
+    var parts = (d.name || "").trim().split(/\s+/);
+    $("heroName").innerHTML = parts.length > 1
+      ? "<span>" + esc(parts.slice(0, -1).join(" ")) + "</span><span>" + esc(parts[parts.length - 1]) + "</span>"
+      : "<span>" + esc(d.name) + "</span>";
+    $("heroLoc").textContent = (d.location || "") + (d.since ? " · Since " + d.since : "");
+    $("heroCap").textContent = d.heroCaption || "";
+    var hi = $("heroImg");
+    hi.src = imgUrl(d.heroImage, d.heroDriveLink, 2400);
+    hi.alt = d.heroCaption || "";
+    hi.onerror = function(){ hi.remove(); };
+
+    $("frames").innerHTML = (d.photos || []).map(function(p, i){
+      var n = String(i + 1).padStart(2, "0");
+      return '<figure class="frame"><div class="box" data-title="' + esc(p.title) + '">' +
+        '<img loading="' + (i < 2 ? "eager" : "lazy") + '" src="' + esc(imgUrl(p.image, p.driveLink, i === 0 ? 2400 : 1600)) + '" alt="' + esc(p.title + (p.project ? " — " + p.project : "")) + '">' +
+        '</div><figcaption><span class="mono fr">FR ' + n + '</span><b>' + esc(p.title) + '</b><span class="mono pj">' + esc(p.project) + '</span></figcaption></figure>';
+    }).join("");
+    $("frames").querySelectorAll("img").forEach(function(im){
+      im.addEventListener("error", function(){ im.parentNode.classList.add("noimg"); });
+    });
+
+    var ab = $("archiveBtn");
+    if (d.photoArchive) ab.href = d.photoArchive; else ab.hidden = true;
+
+    var vids = (d.featuredVideos || []).map(ytId).filter(Boolean);
+    $("videos").innerHTML = vids.length
+      ? '<div class="vids">' + vids.map(function(id){
+          return '<div class="player"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/' + id + '" title="Video" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>';
+        }).join("") + "</div>"
+      : (d.youtubePlaylist
+          ? '<div class="player"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?list=' + encodeURIComponent(d.youtubePlaylist) + '" title="Latest videos" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>'
+          : "");
+    var yb = $("ytBtn");
+    if (d.youtubeChannel) yb.href = d.youtubeChannel; else yb.hidden = true;
+
+    $("clients").innerHTML = (d.clients || []).map(function(c){ return "<li>" + esc(c) + "</li>"; }).join("");
+    $("facts").innerHTML = (d.facts || []).map(function(f){
+      return '<div><dt class="mono">' + esc(f.label) + "</dt><dd>" + esc(f.value) + "</dd></div>";
+    }).join("");
+    $("services").innerHTML = (d.services || []).map(function(s){
+      return '<div class="svc"><h3>' + esc(s.title) + "</h3><p>" + esc(s.text) + "</p></div>";
+    }).join("");
+
+    var c = d.contact || {};
+    $("contactH").textContent = c.headline || "Let's work together.";
+    var links = [];
+    if (c.whatsapp) links.push('<a class="btn solid" target="_blank" rel="noopener" href="' + waLink(c.whatsapp) + '">WhatsApp ' + esc(c.whatsapp) + ' <span class="arr">→</span></a>');
+    if (c.email) links.push('<a class="btn" href="mailto:' + esc(c.email) + '">' + esc(c.email) + "</a>");
+    if (c.instagram) links.push('<a class="btn" target="_blank" rel="noopener" href="' + esc(c.instagram) + '">Instagram</a>');
+    if (c.linkedin) links.push('<a class="btn" target="_blank" rel="noopener" href="' + esc(c.linkedin) + '">LinkedIn</a>');
+    if (d.youtubeChannel) links.push('<a class="btn" target="_blank" rel="noopener" href="' + esc(d.youtubeChannel) + '">YouTube</a>');
+    $("links").innerHTML = links.join("");
+    if (c.whatsapp){ var nw = $("navWa"); nw.href = waLink(c.whatsapp); nw.target = "_blank"; nw.rel = "noopener"; }
+
+    $("copy").textContent = "© " + new Date().getFullYear() + " " + (d.name || "");
+    $("footLoc").textContent = d.location || "";
+  }
+
+  if (window.SITE_DATA) render(window.SITE_DATA);
+  else fetch("content/site.json", { cache: "no-cache" })
+    .then(function(r){ return r.json(); })
+    .then(render)
+    .catch(function(e){ console.error("Could not load content/site.json", e); });
+})();
+</script>
+</body>
+</html>
